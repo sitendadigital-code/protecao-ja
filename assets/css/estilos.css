@@ -1,13 +1,13 @@
 /* ===========================================
-   LUMAD – estilos.css
+   PROTEÇÃO JÁ – estilos.css
    =========================================== */
 
 /* ─── Root Variables ─── */
 :root {
-  --preto: #0A2540; --laranja: #0EA5E9; --laranja-lt: #5CC8F2;
-  --azul: #0B4F8A; --azul-md: #0873B8; --osso: #F2F9FD; --branco: #FFFFFF;
+  --preto: #0A2A4D; --laranja: #F5790A; --laranja-lt: #FFA94D;
+  --azul: #0F3D73; --azul-md: #15529E; --osso: #F3F6FB; --branco: #FFFFFF;
   --pedra: #5C6B73; --pedra-lt: #A9B7BD;
-  --shadow-laranja: 0 20px 40px rgba(14, 165, 233, .15);
+  --shadow-laranja: 0 20px 40px rgba(245, 121, 10, .15);
   --ease: cubic-bezier(.16,1,.3,1); --ease2: cubic-bezier(.4,0,.2,1);
 }
 

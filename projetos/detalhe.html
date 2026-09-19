@@ -6,13 +6,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../favicon.ico">
-<title>Produtos – LUMAD</title>
+<title>Produtos – Proteção Já | Segurança Eletrónica</title>
+<meta name="description" content="Produtos e equipamentos de segurança eletrónica da Proteção Já em Viana, Luanda Sul.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Outfit:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
-:root{--preto:#0A2540;--laranja:#0EA5E9;--laranja-lt:#5CC8F2;--azul:#0B4F8A;--azul-md:#0873B8;--osso:#F2F9FD;--branco:#FFFFFF;--pedra:#5C6B73;--pedra-lt:#A9B7BD;--v:var(--laranja);--vm:var(--azul-md);--vl:var(--azul);--o:var(--laranja);--ol:var(--laranja-lt);--c:var(--preto);--cm:var(--preto);--cr:var(--osso);--b:var(--branco);--ease:cubic-bezier(.16,1,.3,1)}
+:root{--preto:#0A2A4D;--laranja:#F5790A;--laranja-lt:#FFA94D;--azul:#0F3D73;--azul-md:#15529E;--osso:#F3F6FB;--branco:#FFFFFF;--pedra:#5C6B73;--pedra-lt:#A9B7BD;--v:var(--laranja);--vm:var(--azul-md);--vl:var(--azul);--o:var(--laranja);--ol:var(--laranja-lt);--c:var(--preto);--cm:var(--preto);--cr:var(--osso);--b:var(--branco);--ease:cubic-bezier(.16,1,.3,1)}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'Outfit',sans-serif;color:var(--c);background:var(--b);overflow-x:hidden}
@@ -22,12 +23,12 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 ::-webkit-scrollbar{width:4px}::-webkit-scrollbar-thumb{background:var(--v);border-radius:4px}
 
 /* HEADER */
-header{background:rgba(10,37,64,.97);backdrop-filter:blur(24px);position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(14,165,233,.12)}
+header{background:rgba(10,42,77,.97);backdrop-filter:blur(24px);position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(245,121,10,.12)}
 .hw{max-width:1320px;margin:0 auto;padding:.9rem 1.5rem;display:flex;justify-content:space-between;align-items:center}
 @media(min-width:768px){.hw{padding:.95rem 2.5rem}}
 .lw{display:flex;align-items:center;gap:.6rem}
 .lm{width:34px;height:34px;border-radius:7px;background:var(--v);display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden}
-.lm img{width:34px;height:34px;object-fit:cover}
+.lm img{width:34px;height:34px;object-fit:contain}
 .lm-txt{color:#fff;font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:.06em;display:none}
 .ln{display:block;font-family:'Bebas Neue',sans-serif;color:#fff;font-size:1.1rem;letter-spacing:.15em;line-height:1}
 .lt{display:block;color:rgba(255,255,255,.38);font-size:.54rem;letter-spacing:.22em;text-transform:uppercase;margin-top:4px}
@@ -37,7 +38,7 @@ header{background:rgba(10,37,64,.97);backdrop-filter:blur(24px);position:sticky;
 /* HERO BANNER */
 .hero{background:var(--cm);padding:4rem 0 3rem;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1920&q=55') center/cover;opacity:.1;pointer-events:none}
-.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(28,28,26,.65),rgba(28,28,26,.98));pointer-events:none}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,42,77,.65),rgba(10,42,77,.98));pointer-events:none}
 .hero-c{position:relative;z-index:1;max-width:1320px;margin:0 auto;padding:0 1.5rem}
 @media(min-width:768px){.hero-c{padding:0 2.5rem}}
 .bc{display:flex;align-items:center;gap:.5rem;font-size:.74rem;color:rgba(255,255,255,.42);margin-bottom:1.5rem;flex-wrap:wrap}
@@ -71,12 +72,12 @@ header{background:rgba(10,37,64,.97);backdrop-filter:blur(24px);position:sticky;
 .pc{background:#fff;border:1px solid #EAE6DE;border-radius:14px;overflow:hidden;cursor:pointer;transition:transform .42s var(--ease),box-shadow .42s}
 .pc:hover{transform:translateY(-5px);box-shadow:0 22px 55px rgba(0,0,0,.12)}
 .ciw{position:relative;height:230px;overflow:hidden}
-.ciw img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.ciw img{width:100%;height:100%;object-fit:contain;transition:transform .7s var(--ease)}
 .pc:hover .ciw img{transform:scale(1.07)}
-.cov{position:absolute;inset:0;background:rgba(14,165,233,.78);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .35s}
+.cov{position:absolute;inset:0;background:rgba(245,121,10,.78);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .35s}
 .pc:hover .cov{opacity:1}
 .cov span{color:#fff;font-size:.82rem;font-weight:600;display:flex;align-items:center;gap:.45rem}
-.cbg{position:absolute;top:.85rem;left:.85rem;background:rgba(14,165,233,.92);color:#fff;font-size:.58rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:.26rem .7rem;border-radius:100px;z-index:1}
+.cbg{position:absolute;top:.85rem;left:.85rem;background:rgba(245,121,10,.92);color:#fff;font-size:.58rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:.26rem .7rem;border-radius:100px;z-index:1}
 .cb{padding:1.1rem 1.25rem 1.3rem}
 .cm2{display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem}
 .ctt{font-size:.95rem;font-weight:600;color:var(--c);line-height:1.3}
@@ -97,8 +98,8 @@ header{background:rgba(10,37,64,.97);backdrop-filter:blur(24px);position:sticky;
 #md.o #mdc{transform:scale(1) translateY(0);opacity:1}
 .miw{position:relative;height:250px}
 @media(min-width:700px){.miw{height:340px}}
-.miw img{width:100%;height:100%;object-fit:cover;display:block}
-.miw::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(10,37,64,.72),transparent 50%)}
+.miw img{width:100%;height:100%;object-fit:contain;display:block}
+.miw::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(10,42,77,.72),transparent 50%)}
 #cmd{position:absolute;top:.9rem;right:.9rem;z-index:1;width:38px;height:38px;border-radius:50%;background:rgba(0,0,0,.32);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.18);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.82rem;transition:background .3s}
 #cmd:hover{background:rgba(255,255,255,.14)}
 .mtw{position:absolute;bottom:1.4rem;left:2rem;z-index:1}
@@ -136,10 +137,10 @@ footer .back:hover{color:#fff}
   <div class="hw">
     <a href="../index.html" class="lw">
       <div class="lm">
-        <img src="../assets/imagens/logo.png" alt="Logótipo LUMAD" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-        <span class="lm-txt">LUMAD</span>
+        <img src="../assets/imagens/logo.png" alt="Logótipo PROTEÇÃO JÁ" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <span class="lm-txt">PROTEÇÃO JÁ</span>
       </div>
-      <div><span class="ln">LUMAD</span><span class="lt">Água Purificada &amp; Acessórios</span></div>
+      <div><span class="ln">PROTEÇÃO JÁ</span><span class="lt">Segurança Eletrónica</span></div>
     </a>
     <a href="../index.html#contacto" class="hbtn"><i class="fa-solid fa-paper-plane" style="font-size:.64rem"></i> Pedir informação</a>
   </div>
@@ -153,9 +154,9 @@ footer .back:hover{color:#fff}
       <span class="sep">/</span>
       <span style="color:rgba(255,255,255,.65)">Produtos</span>
     </nav>
-    <div class="ey"><div class="r"></div><span>LUMAD</span></div>
+    <div class="ey"><div class="r"></div><span>PROTEÇÃO JÁ</span></div>
     <h1 class="hero-t">Nossos<br>Produtos</h1>
-    <p class="hero-sub">Conheça os produtos da LUMAD: água purificada, filtros e acessórios disponíveis para si.</p>
+    <p class="hero-sub">Conheça os produtos da PROTEÇÃO JÁ: segurança eletrónica, cercas elétricas e acessórios disponíveis para si.</p>
   </div>
 </div>
 
@@ -164,9 +165,10 @@ footer .back:hover{color:#fff}
   <div class="filter-bar-inner">
     <div class="fb-group">
       <button class="fb a" data-filter="all">Todos</button>
-      <button class="fb" data-filter="agua">Água Purificada</button>
-      <button class="fb" data-filter="filtros">Filtros de Água</button>
-      <button class="fb" data-filter="acessorios">Acessórios</button>
+      <button class="fb" data-filter="cameras">Câmeras de Segurança</button>
+      <button class="fb" data-filter="cerca">Cerca Elétrica</button>
+      <button class="fb" data-filter="porteiro">Vídeo Porteiro</button>
+      <button class="fb" data-filter="motores">Motores para Portão</button>
     </div>
     <span class="count-lbl">A mostrar <strong id="countVal">0</strong> produtos</span>
   </div>
@@ -203,28 +205,29 @@ footer .back:hover{color:#fff}
 
 <footer>
   <div class="fw">
-    <p>© 2026 LUMAD. Todos os direitos reservados.</p>
+    <p>© 2026 PROTEÇÃO JÁ. Todos os direitos reservados.</p>
     <a href="../index.html" class="back"><i class="fa-solid fa-arrow-left" style="font-size:.7rem"></i> Voltar ao Início</a>
   </div>
 </footer>
 
 <script>
 /* =====================================================
-   LUMAD – produtos/detalhe.html
+   PROTEÇÃO JÁ – produtos/detalhe.html
    Dados dinâmicos via Supabase (tabela: projects)
    ===================================================== */
 (()=>{
 'use strict';
 
+// Preços ilustrativos: confirmar com o cliente antes da publicação comercial.
 const DEF=[
-  {id:'p1',titulo:'Água Purificada',categoria:'agua',quantidade:20,preco:5000,desc:'Água 100% purificada para a sua casa, empresa ou instituição.',img:'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=1200&q=85'},
-  {id:'p2',titulo:'Filtros de Água',categoria:'filtros',quantidade:5,preco:12000,desc:'Filtros de qualidade para a sua solução de água.',img:'https://images.unsplash.com/photo-1526402460109-1b9f0d7a44f3?auto=format&fit=crop&w=1200&q=85'},
-  {id:'p3',titulo:'Tampas para Bidões',categoria:'acessorios',quantidade:0,preco:1000,desc:'Tampas práticas para os seus bidões.',img:'https://images.unsplash.com/photo-1559839914-17aae19cec71?auto=format&fit=crop&w=1200&q=85'},
-  {id:'p4',titulo:'Bidões Vazios',categoria:'acessorios',quantidade:20,preco:3000,desc:'Bidões vazios para o seu abastecimento.',img:'https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=1200&q=85'},
-  {id:'p5',titulo:'Suportes para Bidões',categoria:'acessorios',quantidade:8,preco:7500,desc:'Suportes para bidões com maior comodidade.',img:'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=1200&q=85'},
+  {id:'p1',titulo:'Câmera HIKVISION Dome 2MP',categoria:'cameras',quantidade:15,preco:45000,desc:'Câmera de vigilância dome, visão nocturna e alta definição, ideal para interiores e exteriores cobertos.',img:'../assets/imagens/seguranca-cctv.svg'},
+  {id:'p2',titulo:'Câmera HIKVISION Bullet IR',categoria:'cameras',quantidade:10,preco:52000,desc:'Câmera bullet com infravermelhos de longo alcance, resistente às condições exteriores.',img:'../assets/imagens/sobre.svg'},
+  {id:'p3',titulo:'Kit Cerca Elétrica 100m',categoria:'cerca',quantidade:6,preco:0,desc:'Kit completo de cerca elétrica com central, bateria e cabos — instalação incluída.',img:'../assets/imagens/seguranca-cctv.svg'},
+  {id:'p4',titulo:'Vídeo Porteiro Inteligente',categoria:'porteiro',quantidade:12,preco:38000,desc:'Sistema de vídeo porteiro com ecrã táctil, ideal para condomínios e residências.',img:'../assets/imagens/sobre.svg'},
+  {id:'p5',titulo:'Motor para Portão Automático',categoria:'motores',quantidade:8,preco:95000,desc:'Motor para portão de correr, com controlo remoto e instalação profissional.',img:'../assets/imagens/seguranca-cctv.svg'},
 ];
 
-const catLabel={agua:'Água Purificada',filtros:'Filtros de Água',acessorios:'Acessórios'};
+const catLabel={cameras:'Câmeras de Segurança',cerca:'Cerca Elétrica',porteiro:'Vídeo Porteiro',motores:'Motores para Portão'};
 const formatarPreco=preco=>preco!==null&&preco!==undefined&&preco!==''&&Number.isFinite(Number(preco))?`${Number(preco).toLocaleString('pt-PT')} Kz`:'Preço sob consulta';
 const formatarDisponibilidade=quantidade=>Number(quantidade)>0?`${quantidade} unidades disponíveis`:'Indisponível';
 
@@ -275,7 +278,7 @@ function renderProjects(filter){
     <div class="pc rv" style="transition-delay:${(i%3)*.08}s" data-id="${p.id}">
       <div class="ciw">
         <span class="cbg">${catLabel[p.categoria]||p.categoria}</span>
-        <img src="${p.img}" alt="${p.titulo}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=60'">
+        <img src="${p.img}" alt="${p.titulo}" loading="lazy" onerror="this.src='../assets/imagens/seguranca-cctv.svg'">
         <div class="cov"><span><i class="fa-solid fa-expand" style="font-size:.8rem"></i> Ver Detalhes</span></div>
       </div>
       <div class="cb">

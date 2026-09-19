@@ -1,5 +1,5 @@
 /* ===========================================
-   LUMAD – Configuração Supabase
+   PROTEÇÃO JÁ – Configuração Supabase
    =========================================== */
 const SUPABASE_URL = 'https://vnimhcbpzmhsqguvxriz.supabase.co';
 const SUPABASE_ANON_KEY = 'sb_publishable_4f1H6H-AooRwWXdOo9PGaw_s__5qqxt';
