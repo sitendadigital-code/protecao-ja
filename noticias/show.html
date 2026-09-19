@@ -37,7 +37,7 @@ header{background:rgba(10,42,77,.97);backdrop-filter:blur(24px);position:sticky;
 
 /* HERO */
 .hero{background:var(--cm);padding:4rem 0 3rem;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1920&q=55') center/cover;opacity:.1;pointer-events:none}
+.hero::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=1200&q=70') center/cover;opacity:.1;pointer-events:none}
 .hero::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,42,77,.6),rgba(10,42,77,.98));pointer-events:none}
 .hero-c{position:relative;z-index:1;max-width:1320px;margin:0 auto;padding:0 1.5rem}
 @media(min-width:768px){.hero-c{padding:0 2.5rem}}
@@ -239,11 +239,12 @@ footer .back:hover{color:#fff}
       </div>
       <div class="cats">
         <button class="catb a" data-cat="all">Todas</button>
-        <button class="catb" data-cat="Infraestrutura">Infraestrutura</button>
-        <button class="catb" data-cat="Edificação">Edificação</button>
-        <button class="catb" data-cat="Promoções">Promoções</button>
         <button class="catb" data-cat="Institucional">Institucional</button>
-        <button class="catb" data-cat="Câmeras de Segurança">Câmeras de Segurança</button><button class="catb" data-cat="Cerca Elétrica">Cerca Elétrica</button><button class="catb" data-cat="Vídeo Porteiro">Vídeo Porteiro</button>
+        <button class="catb" data-cat="Câmeras de Segurança">Câmeras de Segurança</button>
+        <button class="catb" data-cat="Cerca Elétrica">Cerca Elétrica</button>
+        <button class="catb" data-cat="Vídeo Porteiro">Vídeo Porteiro</button>
+        <button class="catb" data-cat="Motores para Portão">Motores para Portão</button>
+        <button class="catb" data-cat="Promoções">Promoções</button>
       </div>
     </div>
   </div>
@@ -324,13 +325,13 @@ footer .back:hover{color:#fff}
 'use strict';
 
 const DEF_NEWS=[
-  {id:'n1',titulo:'Proteção Já chegou a Viana',resumo:'Soluções de segurança eletrónica para residências, empresas e estabelecimentos comerciais.',content:'A Proteção Já instala e mantém sistemas de segurança eletrónica em Viana, Luanda Sul. Peça uma visita técnica e o seu orçamento gratuito.',categoria:'Institucional',data:'',img:'../assets/imagens/seguranca-cctv.svg'},
-  {id:'n2',titulo:'Câmeras de segurança com instalação profissional',resumo:'Proteja o que é importante com sistemas de vigilância CCTV modernos.',content:'Conheça as nossas opções de câmeras de segurança e o atendimento profissional da nossa equipa.',categoria:'Câmeras de Segurança',data:'',img:'../assets/imagens/sobre.svg'}
+  {id:'n1',titulo:'Proteção Já chegou a Viana',resumo:'Soluções de segurança eletrónica para residências, empresas e estabelecimentos comerciais.',content:'A Proteção Já instala e mantém sistemas de segurança eletrónica em Viana, Luanda Sul. Peça uma visita técnica e o seu orçamento gratuito.',categoria:'Institucional',data:'',img:'https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=1200&q=80'},
+  {id:'n2',titulo:'Câmeras de segurança com instalação profissional',resumo:'Proteja o que é importante com sistemas de vigilância CCTV modernos.',content:'Conheça as nossas opções de câmeras de segurança e o atendimento profissional da nossa equipa.',categoria:'Câmeras de Segurança',data:'',img:'https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&fit=crop&w=1200&q=80'}
 ];
 
 const DEF_ADS=[];
 
-const DEF_IMG_FALLBACKS=['../assets/imagens/seguranca-cctv.svg','../assets/imagens/sobre.svg'];
+const DEF_IMG_FALLBACKS=['https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=1200&q=70','https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&fit=crop&w=1200&q=80','https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1200&q=80','https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=80'];
 
 // ── CACHE EM MEMÓRIA (preenchida a partir do Supabase) ──
 let newsCache=DEF_NEWS, adsCache=DEF_ADS;

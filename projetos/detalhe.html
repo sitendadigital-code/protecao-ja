@@ -37,7 +37,7 @@ header{background:rgba(10,42,77,.97);backdrop-filter:blur(24px);position:sticky;
 
 /* HERO BANNER */
 .hero{background:var(--cm);padding:4rem 0 3rem;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1920&q=55') center/cover;opacity:.1;pointer-events:none}
+.hero::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=1200&q=70') center/cover;opacity:.1;pointer-events:none}
 .hero::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,42,77,.65),rgba(10,42,77,.98));pointer-events:none}
 .hero-c{position:relative;z-index:1;max-width:1320px;margin:0 auto;padding:0 1.5rem}
 @media(min-width:768px){.hero-c{padding:0 2.5rem}}
@@ -220,11 +220,11 @@ footer .back:hover{color:#fff}
 
 // Preços ilustrativos: confirmar com o cliente antes da publicação comercial.
 const DEF=[
-  {id:'p1',titulo:'Câmera HIKVISION Dome 2MP',categoria:'cameras',quantidade:15,preco:45000,desc:'Câmera de vigilância dome, visão nocturna e alta definição, ideal para interiores e exteriores cobertos.',img:'../assets/imagens/seguranca-cctv.svg'},
-  {id:'p2',titulo:'Câmera HIKVISION Bullet IR',categoria:'cameras',quantidade:10,preco:52000,desc:'Câmera bullet com infravermelhos de longo alcance, resistente às condições exteriores.',img:'../assets/imagens/sobre.svg'},
-  {id:'p3',titulo:'Kit Cerca Elétrica 100m',categoria:'cerca',quantidade:6,preco:0,desc:'Kit completo de cerca elétrica com central, bateria e cabos — instalação incluída.',img:'../assets/imagens/seguranca-cctv.svg'},
-  {id:'p4',titulo:'Vídeo Porteiro Inteligente',categoria:'porteiro',quantidade:12,preco:38000,desc:'Sistema de vídeo porteiro com ecrã táctil, ideal para condomínios e residências.',img:'../assets/imagens/sobre.svg'},
-  {id:'p5',titulo:'Motor para Portão Automático',categoria:'motores',quantidade:8,preco:95000,desc:'Motor para portão de correr, com controlo remoto e instalação profissional.',img:'../assets/imagens/seguranca-cctv.svg'},
+  {id:'p1',titulo:'Câmera HIKVISION Dome 2MP',categoria:'cameras',quantidade:15,preco:45000,desc:'Câmera de vigilância dome, visão nocturna e alta definição, ideal para interiores e exteriores cobertos.',img:'https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=1200&q=80'},
+  {id:'p2',titulo:'Câmera HIKVISION Bullet IR',categoria:'cameras',quantidade:10,preco:52000,desc:'Câmera bullet com infravermelhos de longo alcance, resistente às condições exteriores.',img:'https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&fit=crop&w=1200&q=80'},
+  {id:'p3',titulo:'Kit Cerca Elétrica 100m',categoria:'cerca',quantidade:6,preco:0,desc:'Kit completo de cerca elétrica com central, bateria e cabos — instalação incluída.',img:'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1200&q=80'},
+  {id:'p4',titulo:'Vídeo Porteiro Inteligente',categoria:'porteiro',quantidade:12,preco:38000,desc:'Sistema de vídeo porteiro com ecrã táctil, ideal para condomínios e residências.',img:'https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=80'},
+  {id:'p5',titulo:'Motor para Portão Automático',categoria:'motores',quantidade:8,preco:95000,desc:'Motor para portão de correr, com controlo remoto e instalação profissional.',img:'https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80'},
 ];
 
 const catLabel={cameras:'Câmeras de Segurança',cerca:'Cerca Elétrica',porteiro:'Vídeo Porteiro',motores:'Motores para Portão'};
@@ -278,7 +278,7 @@ function renderProjects(filter){
     <div class="pc rv" style="transition-delay:${(i%3)*.08}s" data-id="${p.id}">
       <div class="ciw">
         <span class="cbg">${catLabel[p.categoria]||p.categoria}</span>
-        <img src="${p.img}" alt="${p.titulo}" loading="lazy" onerror="this.src='../assets/imagens/seguranca-cctv.svg'">
+        <img src="${p.img}" alt="${p.titulo}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=1200&q=70'">
         <div class="cov"><span><i class="fa-solid fa-expand" style="font-size:.8rem"></i> Ver Detalhes</span></div>
       </div>
       <div class="cb">
